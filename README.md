@@ -55,3 +55,11 @@ project
 ![キャプチャ](img/2019-07-19-16-35-43.png)
 
 たったこれだけ。
+
+## Vue Routerを使用する
+
+作成時点の最新をCDNから読み込み (2019/07/19現在)
+
+```html
+<script src="https://unpkg.com/vue-router@3.0.7/dist/vue-router.js"></script>
+```
