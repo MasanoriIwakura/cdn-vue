@@ -4,6 +4,10 @@ const router = new VueRouter({
     {
       path: '/one',
       component: one
+    },
+    {
+      path: '/two',
+      component: two
     }
   ]
 })
