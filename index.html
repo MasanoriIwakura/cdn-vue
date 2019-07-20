@@ -4,22 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router@3.0.7/dist/vue-router.js"></script>
+  <!-- Components -->
+  <script src="/js/components/MyNavbar.js"></script>
+  <!-- Pages -->
   <script src="/js/pages/one.js"></script>
   <script src="/js/pages/two.js"></script>
+  <!-- Route -->
   <script src="/js/route.js"></script>
   <title>CDN Vue</title>
 </head>
 <body>
 
-  <div class="container">
-    <div id="app">
-      <h1>{{ msg }}</h1>
-      <router-link to="/one">One</router-link>
-      <router-link to="/two">Two</router-link>
-      <router-view></router-view>
-    </div>
+  <div id="app">
+    <my-navbar></my-navbar>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">{{ msg }}</h1>
+        <router-view></router-view>
+      </div>
+    </section>
   </div>
 
   <script>
@@ -28,6 +34,9 @@
       el: '#app',
       data: {
         msg: 'Hello Vue.js'
+      },
+      components: {
+        'my-navbar': MyNavbar
       }
     })
   </script>

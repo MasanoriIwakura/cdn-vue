@@ -1,7 +1,7 @@
 const one = {
   template: `
     <div id="one">
-      <p>One</p>
+      <h1>One</h1>
     </div>
   `
 }
